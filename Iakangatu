@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instituto Akangatu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d35400;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header img {
+      height: 70px;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #d35400;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    form {
+      background-color: #fbeee6;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: #d35400;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #b84300;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #d35400;
+      text-decoration: none;
+    }
+
+    /* Botão WhatsApp */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-button a {
+      background-color: #25d366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+    }
+
+    .whatsapp-button img {
+      width: 24px;
+      margin-right: 8px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      button, input, textarea {
+        font-size: 14px;
+      }
+
+      .whatsapp-button a {
+        font-size: 14px;
+        padding: 12px 16px;
+      }
+
+      .whatsapp-button img {
+        width: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Feather_icon_orange.svg/512px-Feather_icon_orange.svg.png" alt="Logo Instituto Akangatu" />
+    <h1>Instituto Akangatu</h1>
+    <p><em>Aprovação garantida e entrega em 24 horas</em></p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>📚 Nossos Serviços</h2>
+      <p>O Instituto Akangatu é especialista na produção de Trabalhos de Conclusão de Curso (TCC) com aprovação garantida! Oferecemos agilidade, qualidade e suporte completo ao aluno.</p>
+    </section>
+
+    <section>
+      <h2>📩 Entre em Contato</h2>
+      <form action="#" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>📞 Telefone: (47) 99726-0888</p>
+    <p>📸 Instagram: <a href="https://instagram.com/InstitutoAkangatu" target="_blank">@InstitutoAkangatu</a></p>
+    <p>&copy; 2025 Instituto Akangatu. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão WhatsApp flutuante -->
+  <div class="whatsapp-button">
+    <a href="https://wa.me/5547997260888" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
+      Fale conosco
+    </a>
+  </div>
+
+</body>
+</html>
