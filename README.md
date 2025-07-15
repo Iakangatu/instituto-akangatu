@@ -10,7 +10,6 @@
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
-
     .fade-in-up {
       animation: fadeInUp 1s ease-out forwards;
     }
@@ -18,14 +17,8 @@
 </head>
 <body class="text-white">
 
-  <!-- Seção com Vídeo de Fundo -->
-  <section class="relative h-screen w-full overflow-hidden">
-    <!-- Vídeo de fundo -->
-    <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
-      <source src="https://cdn.coverr.co/videos/coverr-student-walking-to-college-4672/1080p.mp4" type="video/mp4">
-      Seu navegador não suporta vídeos HTML5.
-    </video>
-
+  <!-- Seção com Imagem de Fundo -->
+  <section class="relative h-screen w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1950&q=80');">
     <!-- Overlay escuro -->
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
@@ -41,19 +34,19 @@
   <section class="bg-gradient-to-b from-purple-300 via-purple-500 to-blue-900 py-16 px-6">
     <div class="max-w-6xl mx-auto text-center fade-in-up">
       <h2 class="text-3xl font-bold mb-6">Nossos Serviços</h2>
-      <p class="mb-10 text-white/90 max-w-2xl mx-auto">Ajudamos você a conquistar sua aprovação com TCCs feitos com excelência, mentoria personalizada e suporte rápido.</p>
+      <p class="mb-10 text-white/90 max-w-2xl mx-auto">Produção de TCCs, mentorias e serviços educacionais com foco em aprovação e excelência acadêmica.</p>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20 hover:shadow-md transition">
           <h3 class="text-xl font-semibold text-white mb-2">TCC com aprovação</h3>
-          <p>Trabalhos completos com garantia de aceitação.</p>
+          <p>Trabalhos acadêmicos completos e aprovados com excelência.</p>
         </div>
         <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20 hover:shadow-md transition">
           <h3 class="text-xl font-semibold text-white mb-2">Mentorias</h3>
-          <p>Acompanhamento individual de cada etapa do TCC.</p>
+          <p>Suporte individual em todas as etapas do seu TCC.</p>
         </div>
         <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20 hover:shadow-md transition">
-          <h3 class="text-xl font-semibold text-white mb-2">Formatação & Revisão</h3>
-          <p>Normas ABNT, APA, Vancouver e mais, com perfeição.</p>
+          <h3 class="text-xl font-semibold text-white mb-2">Revisões e Formatação</h3>
+          <p>Adequação às normas ABNT, APA, Vancouver e outras exigidas.</p>
         </div>
       </div>
     </div>
@@ -90,3 +83,4 @@
 
 </body>
 </html>
+
