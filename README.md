@@ -5,60 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Instituto Akangatu</title>
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gradient-to-b from-purple-300 via-purple-500 to-blue-900 text-white">
+  <style>
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
 
-  <!-- Hero Section -->
-  <header class="py-12 px-6">
-    <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center">
-      <div class="md:w-1/2 mt-6 md:mt-0 text-center md:text-left">
-        <h1 class="text-4xl font-bold mb-4">Instituto Akangatu</h1>
-        <p class="text-lg mb-4">Receba seu TCC com aprovação garantida e em 24 horas!</p>
-        <a href="#contato" class="inline-block bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-purple-100 transition">Fale Conosco</a>
-      </div>
-      <div class="md:w-1/2">
-        <img src="https://images.unsplash.com/photo-1603570419883-7a9c94c8b5f8?auto=format&fit=crop&w=800&q=80" alt="Jovem negra com livros" class="rounded-xl shadow-lg">
-      </div>
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- Seção com Vídeo de Fundo -->
+  <section class="relative h-screen w-full overflow-hidden">
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
+      <source src="https://cdn.coverr.co/videos/coverr-student-walking-to-college-4672/1080p.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+
+    <!-- Overlay escuro -->
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+    <!-- Conteúdo central -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 fade-in-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Instituto Akangatu</h1>
+      <p class="text-lg md:text-2xl mb-6">Receba seu TCC com aprovação garantida e em 24 horas!</p>
+      <a href="#contato" class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">Fale Conosco</a>
     </div>
-  </header>
+  </section>
 
   <!-- Serviços -->
-  <section class="py-16 px-6 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-6">Nossos Serviços</h2>
-    <p class="text-center mb-10 max-w-2xl mx-auto text-lg text-white/90">Oferecemos suporte completo na produção de TCCs, com aprovação garantida, agilidade e atendimento especializado.</p>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20 hover:shadow-md transition">
-        <h3 class="text-xl font-semibold text-white mb-2">TCC com aprovação</h3>
-        <p>Produzimos seu TCC com qualidade, seguindo as normas da sua instituição.</p>
-      </div>
-      <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20 hover:shadow-md transition">
-        <h3 class="text-xl font-semibold text-white mb-2">Mentorias Personalizadas</h3>
-        <p>Acompanhamento individual para orientar alunos em todas as etapas do TCC.</p>
-      </div>
-      <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20 hover:shadow-md transition">
-        <h3 class="text-xl font-semibold text-white mb-2">Revisões e Formatações</h3>
-        <p>Ajustamos seu trabalho conforme ABNT, APA ou normas específicas da sua faculdade.</p>
+  <section class="bg-gradient-to-b from-purple-300 via-purple-500 to-blue-900 py-16 px-6">
+    <div class="max-w-6xl mx-auto text-center fade-in-up">
+      <h2 class="text-3xl font-bold mb-6">Nossos Serviços</h2>
+      <p class="mb-10 text-white/90 max-w-2xl mx-auto">Ajudamos você a conquistar sua aprovação com TCCs feitos com excelência, mentoria personalizada e suporte rápido.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20 hover:shadow-md transition">
+          <h3 class="text-xl font-semibold text-white mb-2">TCC com aprovação</h3>
+          <p>Trabalhos completos com garantia de aceitação.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20 hover:shadow-md transition">
+          <h3 class="text-xl font-semibold text-white mb-2">Mentorias</h3>
+          <p>Acompanhamento individual de cada etapa do TCC.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20 hover:shadow-md transition">
+          <h3 class="text-xl font-semibold text-white mb-2">Formatação & Revisão</h3>
+          <p>Normas ABNT, APA, Vancouver e mais, com perfeição.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="py-16 px-6 bg-white/10 backdrop-blur-lg border-t border-white/20">
-    <div class="max-w-3xl mx-auto text-white">
-      <h2 class="text-3xl font-bold mb-8 text-center">Entre em Contato</h2>
-      <form action="#" method="POST" class="grid gap-6">
-        <input type="text" name="nome" placeholder="Seu nome" required class="p-4 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70">
-        <input type="email" name="email" placeholder="Seu e-mail" required class="p-4 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70">
-        <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required class="p-4 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70"></textarea>
-        <button type="submit" class="bg-white text-purple-800 font-semibold py-3 rounded-lg hover:bg-purple-100 transition">Enviar</button>
+  <section id="contato" class="bg-white text-gray-900 py-16 px-6">
+    <div class="max-w-3xl mx-auto text-center fade-in-up">
+      <h2 class="text-3xl font-bold mb-8">Entre em Contato</h2>
+      <form action="#" method="POST" class="grid gap-6 text-left">
+        <input type="text" name="nome" placeholder="Seu nome" required class="p-4 border border-gray-300 rounded-lg">
+        <input type="email" name="email" placeholder="Seu e-mail" required class="p-4 border border-gray-300 rounded-lg">
+        <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required class="p-4 border border-gray-300 rounded-lg"></textarea>
+        <button type="submit" class="bg-orange-600 text-white font-semibold py-3 rounded-lg hover:bg-orange-700 transition">Enviar</button>
       </form>
     </div>
   </section>
 
   <!-- Rodapé -->
-  <footer class="bg-white/10 text-white text-center py-6 border-t border-white/20">
+  <footer class="bg-gray-900 text-white text-center py-6">
     <p>📍 RS | 📞 WhatsApp: (47) 99726-0888</p>
-    <p>📸 Instagram: <a href="https://www.instagram.com/instituto.akangatu" target="_blank" class="underline text-white">/instituto.akangatu</a></p>
+    <p>📸 Instagram: <a href="https://www.instagram.com/instituto.akangatu" target="_blank" class="underline">/instituto.akangatu</a></p>
     <p class="mt-2 text-sm text-white/70">&copy; 2025 Instituto Akangatu. Todos os direitos reservados.</p>
   </footer>
 
@@ -73,5 +90,3 @@
 
 </body>
 </html>
-
-
